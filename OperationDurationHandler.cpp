@@ -1,4 +1,4 @@
-#include "OperationDurationHandler.h"
+#include "OperationDurationHandler.hpp"
 
 OperationDurationHandler::OperationDurationHandler(unsigned int operationDuration, unsigned int maxLimit)
 {
