@@ -13,6 +13,8 @@ enum SelfTestStatusCode
 class StartupSelfTestHandler
 {
 public: 
+	StartupSelfTestHandler() = default;
+	~StartupSelfTestHandler() = default;
 	StartupSelfTestHandler(unsigned int selfTestStatuscode)
 	{
 		m_selfTestStatuscode = selfTestStatuscode;
