@@ -40,3 +40,4 @@ public:
 private:
 	std::vector<DiagData>m_alertReason;
 };
+#endif //__IALERTFUNCTION_H__
