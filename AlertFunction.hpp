@@ -10,7 +10,7 @@ enum AlertReasonType
 	C_CheckMachine = 1
 };
 
-typedef struct DiagData
+struct DiagData
 {
 	AlertReasonType alertReason;
 	std::string alertString;
