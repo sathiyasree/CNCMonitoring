@@ -1,7 +1,7 @@
 // CncMonitor.cpp : Defines the entry point for the console application.
 //
 
-#include "CncMonitor.h"
+#include "CncMonitor.hpp"
 
 
 int main()
