@@ -1,5 +1,5 @@
 #ifndef __CNC_MONITOR_H__
 
-#include "IcncMonitor.h"
+#include "IcncMonitor.hpp"
 
 #endif // !__CNC_MONITOR_H__
