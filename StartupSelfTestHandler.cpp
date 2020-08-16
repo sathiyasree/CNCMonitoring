@@ -1,10 +1,4 @@
 #include "StartupSelfTestHandler.hpp"
-
-StartupSelfTestHandler::StartupSelfTestHandler(unsigned int selfTestStatuscode)
-{
-	m_selfTestStatuscode = selfTestStatuscode;
-}
-
 void StartupSelfTestHandler::updateStartupSelfTestStatus(unsigned int selfTestStatuscode)
 {
 	m_selfTestStatuscode = selfTestStatuscode;
