@@ -15,7 +15,7 @@ class StartupSelfTestHandler
 public: 
 	StartupSelfTestHandler() = default;
 	~StartupSelfTestHandler() = default;
-	StartupSelfTestHandler(unsigned int selfTestStatuscode)
+	explicit StartupSelfTestHandler(unsigned int selfTestStatuscode)
 	{
 		m_selfTestStatuscode = selfTestStatuscode;
 	}
