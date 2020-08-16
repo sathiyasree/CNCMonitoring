@@ -2,24 +2,34 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
 
+enum AlertReasonType
+{
+	C_CheckEnvironment = 0,
+	C_CheckMachine = 1
+};
+
+typedef struct DiagData
+{
+	AlertReasonType alertReason;
+	std::string alertString;
+};
 class IAlert
 {
 public:
-	IAlert(std::string alertReason)
-	{
-		m_alertReason = alertReason;
-	}
 	IAlert() = default;
 	~IAlert() = default;
 
-	void alertUser(std::string alertReason)
+	void alertUser(DiagData alertReason)
 	{
 		/* give data to the alert output type in required format*/
-		std::cout << m_alertReason;
+		m_alertReason.push_back(alertReason);
+	}
+	void clearPreviousAlerts()
+	{
+		m_alertReason.clear();
 	}
 private:
-	bool m_alertRequired;
-	std::string m_alertReason;
+	std::vector<DiagData>m_alertReason;
 };
-#endif // !__ALERTFUNCTION_H__
