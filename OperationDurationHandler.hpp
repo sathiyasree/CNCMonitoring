@@ -1,6 +1,6 @@
 #ifndef __OPERATIONDURATIONHANDLER_H__
 
-#include "IcncMonitor.h"
+#include "IcncMonitor.hpp"
 
 class OperationDurationHandler
 {
