@@ -18,5 +18,8 @@ bool IAlert::doesSystemNeedAttention()
 
 std::string IAlert::getdiagnosisData()
 {
+	std::string returnval = "";
+	
+	return(returnval);
 
 }
