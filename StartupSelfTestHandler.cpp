@@ -1,4 +1,4 @@
-#include "StartupSelfTestHandler.h"
+#include "StartupSelfTestHandler.hpp"
 
 StartupSelfTestHandler::StartupSelfTestHandler(unsigned int selfTestStatuscode)
 {
