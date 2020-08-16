@@ -1,17 +1,17 @@
 #include "AlertFunction.hpp"
 
-void alertUser(DiagData alertReason)
+void IAlert::alertUser(DiagData alertReason)
 {
 	/* give data to the alert output type in required format*/
 	m_alertReason.push_back(alertReason);
 }
 
-void clearPreviousAlerts()
+void IAlert::clearPreviousAlerts()
 {
 	m_alertReason.clear();
 }
 	
-bool doesSystemNeedAttention()
+bool IAlert::doesSystemNeedAttention()
 {
 	return(m_alertReason.size() != 0);
 } 
