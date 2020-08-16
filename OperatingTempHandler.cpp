@@ -1,4 +1,4 @@
-#include "OperatingTempHandler.h"
+#include "OperatingTempHandler.hpp"
 
 OperatingTempHandler::OperatingTempHandler(float currentTemp, float maxlimit)
 {
