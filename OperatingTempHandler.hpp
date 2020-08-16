@@ -1,6 +1,6 @@
 #ifndef __OPERATINGTEMPHANDLER_H__
 
-#include "IcncMonitor.h"
+#include "IcncMonitor.hpp"
 
 class OperatingTempHandler
 {
