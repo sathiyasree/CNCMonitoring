@@ -13,7 +13,11 @@ enum SelfTestStatusCode
 class StartupSelfTestHandler
 {
 public: 
-	StartupSelfTestHandler(unsigned int selfTestStatuscode);
+	StartupSelfTestHandler(unsigned int selfTestStatuscode)
+	{
+		m_selfTestStatuscode = selfTestStatuscode;
+	}
+
 	void updateStartupSelfTestStatus(unsigned int selfTestStatuscode);
 
 	void validateCncData();
