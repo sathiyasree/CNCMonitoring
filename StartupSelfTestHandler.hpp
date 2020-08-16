@@ -1,6 +1,6 @@
 #ifndef __STARTUPSELFTESTHANDLER_H__
 
-#include "IcncMonitor.h"
+#include "IcncMonitor.hpp"
 
 enum SelfTestStatusCode
 {
