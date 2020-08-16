@@ -30,6 +30,13 @@ public:
 	{
 		m_alertReason.clear();
 	}
+	
+	bool doesSystemNeedAttention()
+	{
+		return(m_alertReason.size() != 0);
+	} 
+
+	std::string getdiagnosisData();
 private:
 	std::vector<DiagData>m_alertReason;
 };
