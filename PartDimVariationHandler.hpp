@@ -1,6 +1,6 @@
 #ifndef __PARTDIMVARIATIONHANDLER_H__
 
-#include "IcncMonitor.h"
+#include "IcncMonitor.hpp"
 
 class PartDimVariationHandler
 {
