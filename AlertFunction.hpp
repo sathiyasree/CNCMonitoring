@@ -21,21 +21,10 @@ public:
 	IAlert() = default;
 	~IAlert() = default;
 
-	void alertUser(DiagData alertReason)
-	{
-		/* give data to the alert output type in required format*/
-		m_alertReason.push_back(alertReason);
-	}
-	void clearPreviousAlerts()
-	{
-		m_alertReason.clear();
-	}
+	void alertUser(DiagData alertReason);
+	void clearPreviousAlerts();
 	
-	bool doesSystemNeedAttention()
-	{
-		return(m_alertReason.size() != 0);
-	} 
-
+	bool doesSystemNeedAttention();
 	std::string getdiagnosisData();
 private:
 	std::vector<DiagData>m_alertReason;
