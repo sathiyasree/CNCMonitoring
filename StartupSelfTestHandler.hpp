@@ -2,7 +2,7 @@
 
 #include "IcncMonitor.hpp"
 
-enum SelfTestStatusCode
+enum SelfTestStatusCodeType
 {
 	C_NoData = 0x00,
 	C_ControllerBoard_NOK = 0x01,
@@ -15,15 +15,15 @@ class StartupSelfTestHandler
 public: 
 	StartupSelfTestHandler() = default;
 	~StartupSelfTestHandler() = default;
-	explicit StartupSelfTestHandler(unsigned int selfTestStatuscode)
+	explicit StartupSelfTestHandler(SelfTestStatusCodeType selfTestStatuscode)
 	{
 		m_selfTestStatuscode = selfTestStatuscode;
 	}
 
-	void updateStartupSelfTestStatus(unsigned int selfTestStatuscode);
+	void updateStartupSelfTestStatus(SelfTestStatusCodeType selfTestStatuscode);
 
 	void validateCncData();
 private:
-	SelfTestStatusCode m_selfTestStatuscode;
+	SelfTestStatusCodeType m_selfTestStatuscode;
 };
 #endif // !__STARTUPSELFTESTHANDLER_H__
