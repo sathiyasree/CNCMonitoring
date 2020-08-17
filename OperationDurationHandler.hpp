@@ -1,7 +1,5 @@
 #ifndef __OPERATIONDURATIONHANDLER_H__
 
-#include "IcncMonitor.hpp"
-
 class OperationDurationHandler
 {
 public:
