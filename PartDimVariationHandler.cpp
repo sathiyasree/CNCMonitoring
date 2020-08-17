@@ -1,4 +1,5 @@
 #include"PartDimVariationHandler.hpp"
+#include "IcncMonitor.hpp"
 
 void PartDimVariationHandler::updatePartDimVariation(float currentPartDimvariation)
 {
