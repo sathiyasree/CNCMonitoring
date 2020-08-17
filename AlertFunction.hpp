@@ -22,7 +22,7 @@ public:
 	IAlert() = default;
 	~IAlert() = default;
 
-	void alertUser(DiagData alertReason);
+	void alertUser(AlertReasonType alertReason, std::string alertString);
 	void clearPreviousAlerts();
 	
 	bool doesSystemNeedAttention();
