@@ -14,6 +14,7 @@ struct DiagData
 {
 	AlertReasonType alertReason;
 	std::string alertString;
+	DiagData(AlertReasonType alertReason, std::string alertString) :alertReason(alertReason), alertString(alertString) {}
 };
 class IAlert
 {
