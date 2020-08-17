@@ -1,7 +1,5 @@
 #ifndef __STARTUPSELFTESTHANDLER_H__
 
-#include "IcncMonitor.hpp"
-
 enum SelfTestStatusCodeType
 {
 	C_NoData = 0x00,
