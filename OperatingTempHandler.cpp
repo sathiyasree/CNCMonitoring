@@ -1,4 +1,5 @@
 #include "OperatingTempHandler.hpp"
+#include "IcncMonitor.hpp"
 
 void OperatingTempHandler::updateOperatingTemp(float currentTemp)
 {
