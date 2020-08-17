@@ -1,4 +1,5 @@
 #include "StartupSelfTestHandler.hpp"
+#include "IcncMonitor.hpp"
 #include <map>
 
 std::map<SelfTestStatusCodeType, std::string> selfTestCodeEnumtoString =
