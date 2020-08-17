@@ -9,6 +9,7 @@
 
 int main()
 {
+    // Below object creation or function calls will be triggerend by timing events 
     StartupSelfTestHandler StartupSelfTest(C_AllOk);
     OperatingTempHandler OperatingTemp(23, 35.0f);
     OperationDurationHandler OperationDuration(30,360);
