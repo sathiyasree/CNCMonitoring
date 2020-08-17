@@ -1,7 +1,5 @@
 #ifndef __OPERATINGTEMPHANDLER_H__
 
-#include "IcncMonitor.hpp"
-
 class OperatingTempHandler
 {
 public:
