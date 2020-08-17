@@ -8,11 +8,6 @@ std::map<SelfTestStatusCodeType, std::string> selfTestCodeEnumtoString =
 	{ C_ConfigDataCorrupted,"Configuration data in the machine is corrupted"},
 	{ C_AllOk,"All ok, No problem in either CNC machine and in environment" }
 };
-StartupSelfTestHandler::StartupSelfTestHandler(SelfTestStatusCodeType selfTestStatuscode)
-{
-	m_selfTestStatuscode = selfTestStatuscode;
-}
-
 void StartupSelfTestHandler::updateStartupSelfTestStatus(SelfTestStatusCodeType selfTestStatuscode)
 {
 	m_selfTestStatuscode = selfTestStatuscode;
