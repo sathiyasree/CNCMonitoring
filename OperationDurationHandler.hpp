@@ -8,7 +8,7 @@ public:
 	OperationDurationHandler() = default;
 	~OperationDurationHandler() = default;
 
-	OperationDurationHandler(unsigned int operationDuration, unsigned int maxLimit);
+	OperationDurationHandler(unsigned int operationDuration, unsigned int maxLimit):m_operationDuration(operationDuration):m_maxLimit(maxLimit){}
 	void updateOperationDuration(unsigned int operationDuration);
 	void changeOperationDurationLimit(unsigned int maxLimit);
 
