@@ -1,5 +1,7 @@
 #include "AlertFunction.hpp"
 
+IAlert* IAlert::m_pThis = nullptr;
+
 void IAlert::alertUser(AlertReasonType alertReason, std::string alertString)
 {
 	/* give data to the alert output type in required format*/
