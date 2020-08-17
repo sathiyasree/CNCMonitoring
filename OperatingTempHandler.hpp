@@ -9,7 +9,7 @@ public:
 	OperatingTempHandler() = default;
 	~OperatingTempHandler() = default;
 
-	OperatingTempHandler(float currentTemp, float maxlimit);
+	OperatingTempHandler(float currentTemp, float maxlimit):m_currentTemp(currentTemp),m_maxLimit(maxLimit){}
 	void updateOperatingTemp(float currentTemp);
 	void changeOperatingTempLimit(float maxLimit);
 
