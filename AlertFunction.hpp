@@ -28,7 +28,6 @@ public:
 	}
 
 private:
-	std::vector<DiagData>m_alertReason;
 	
 	struct DiagData
 	{
@@ -36,6 +35,8 @@ private:
 		std::string alertString;
 		DiagData(AlertReasonType alertReason, std::string alertString) :alertReason(alertReason), alertString(alertString) {}
 	};
+	
+	std::vector<DiagData>m_alertReason;
 	// Assignment operator
 	IAlert& operator=(const IAlert&) { return *this; }
 
