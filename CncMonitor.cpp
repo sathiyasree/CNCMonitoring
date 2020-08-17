@@ -2,7 +2,10 @@
 //
 
 #include "CncMonitor.hpp"
-
+#include "StartupSelfTestHandler.hpp"
+#include "OperatingTempHandler.hpp"
+#include "OperationDurationHandler.hpp"
+#include "PartDimVariationHandler.hpp"
 
 int main()
 {
