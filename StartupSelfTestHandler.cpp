@@ -19,6 +19,7 @@ void StartupSelfTestHandler::validateCncData()
 	std::string alertText = selfTestCodeEnumtoString[m_selfTestStatuscode];
 	if (m_selfTestStatuscode != C_AllOk)
 	{
-		// call alert function
+		std::string alertText= "StartupSelfTest is Not Okay, Status Code : " + std::to_string(m_selfTestStatuscode);
+		IAlert::getAlertFunction()->alertUser(C_CheckMachine, alertText);
 	}
 }
