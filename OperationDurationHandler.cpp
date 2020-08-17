@@ -1,10 +1,5 @@
 #include "OperationDurationHandler.hpp"
 
-OperationDurationHandler::OperationDurationHandler(unsigned int operationDuration, unsigned int maxLimit)
-{
-	m_operationDuration = operationDuration;
-	m_maxLimit = maxLimit;
-}
 void OperationDurationHandler::updateOperationDuration(unsigned int operationDuration)
 {
 	m_operationDuration = operationDuration;
