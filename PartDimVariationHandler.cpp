@@ -1,11 +1,5 @@
 #include"PartDimVariationHandler.hpp"
 
-PartDimVariationHandler::PartDimVariationHandler(float currentPartDimvariation, float maxLimit)
-{
-	m_currentPartDimVariation = currentPartDimvariation;
-	m_maxLimit = maxLimit;
-}
-
 void PartDimVariationHandler::updatePartDimVariation(float currentPartDimvariation)
 {
 	m_currentPartDimVariation = currentPartDimvariation;
