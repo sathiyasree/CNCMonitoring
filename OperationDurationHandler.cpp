@@ -14,6 +14,7 @@ void OperationDurationHandler::validateCncData()
 {
 	if (m_operationDuration > m_maxLimit)
 	{
-		// call Alert function
+		std::string alertText = "Continuous Operatin duration : " + std::to_string(m_operationDuration) + " exceeding max limit of " + std::to_string(m_maxLimit) + "minutes";
+		IAlert::getAlertFunction()->alertUser(C_CheckEnvironment, alertText);
 	}
 }
