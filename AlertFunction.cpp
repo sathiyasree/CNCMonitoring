@@ -1,9 +1,9 @@
 #include "AlertFunction.hpp"
 
-void IAlert::alertUser(DiagData alertReason)
+void IAlert::alertUser(AlertReasonType alertReason, std::string alertString)
 {
 	/* give data to the alert output type in required format*/
-	m_alertReason.push_back(alertReason);
+	m_alertReason.push_back(DiagData(alertReason, alertString));
 }
 
 void IAlert::clearPreviousAlerts()
