@@ -1,5 +1,5 @@
 #include "OperationDurationHandler.hpp"
-
+#include "IcncMonitor.hpp"
 void OperationDurationHandler::updateOperationDuration(unsigned int operationDuration)
 {
 	m_operationDuration = operationDuration;
