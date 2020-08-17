@@ -26,7 +26,22 @@ public:
 	
 	bool doesSystemNeedAttention();
 	std::string getdiagnosisData();
+	static IAlert* getAlertFunction() {
+		if (m_pThis == nullptr) {
+			m_pThis = new IAlert();
+		}
+		return m_pThis;
+	}
+
 private:
 	std::vector<DiagData>m_alertReason;
+	// Default constructor
+	IAlert() {}
+
+	// Assignment operator
+	IAlert& operator=(const IAlert&) { return *this; }
+
+	// Singleton alert class
+	static IAlert* m_pThis;;
 };
 #endif //__IALERTFUNCTION_H__
