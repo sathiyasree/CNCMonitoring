@@ -9,7 +9,7 @@
 
 int main()
 {
-    StartupSelfTestHandler StartupSelfTest(0xFF);
+    StartupSelfTestHandler StartupSelfTest(C_AllOk);
     OperatingTempHandler OperatingTemp(23, 35.0f);
     OperationDurationHandler OperationDuration(30,360);
     PartDimVariationHandler PartDimVariation (0.0f, 0.05f);
