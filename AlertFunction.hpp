@@ -41,6 +41,6 @@ private:
 	IAlert& operator=(const IAlert&) { return *this; }
 
 	// Singleton alert class
-	static IAlert* m_pThis;;
+	static IAlert* m_pThis;
 };
 #endif //__IALERTFUNCTION_H__
