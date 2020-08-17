@@ -1,11 +1,5 @@
 #include "OperatingTempHandler.hpp"
 
-OperatingTempHandler::OperatingTempHandler(float currentTemp, float maxlimit)
-{
-	m_currentTemp = currentTemp;
-	m_maxLimit = maxlimit;
-}
-
 void OperatingTempHandler::updateOperatingTemp(float currentTemp)
 {
 	m_currentTemp = currentTemp;
