@@ -15,11 +15,7 @@ class StartupSelfTestHandler
 public: 
 	StartupSelfTestHandler() = default;
 	~StartupSelfTestHandler() = default;
-	explicit StartupSelfTestHandler(SelfTestStatusCodeType selfTestStatuscode)
-	{
-		m_selfTestStatuscode = selfTestStatuscode;
-	}
-
+	explicit StartupSelfTestHandler(SelfTestStatusCodeType selfTestStatuscode):m_selfTestStatuscode(selfTestStatuscode) {}
 	void updateStartupSelfTestStatus(SelfTestStatusCodeType selfTestStatuscode);
 
 	void validateCncData();
