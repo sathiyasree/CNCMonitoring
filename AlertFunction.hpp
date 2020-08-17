@@ -36,9 +36,7 @@ public:
 
 private:
 	std::vector<DiagData>m_alertReason;
-	// Default constructor
-	IAlert() {}
-
+	
 	// Assignment operator
 	IAlert& operator=(const IAlert&) { return *this; }
 
