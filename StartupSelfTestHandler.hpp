@@ -24,6 +24,6 @@ public:
 
 	void validateCncData();
 private:
-	unsigned int m_selfTestStatuscode;
+	SelfTestStatusCode m_selfTestStatuscode;
 };
 #endif // !__STARTUPSELFTESTHANDLER_H__
